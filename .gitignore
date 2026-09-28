@@ -1,0 +1,70 @@
+# ---------- 构建输出 / 中间产物 ----------
+# MSBuild 默认输出目录 [Debug|Release|x64|...]
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# MSBuild 中间目录，形如 EngineProgramPractices.<hash>/
+*.[Bb]7117545/
+# 兜底：项目名.<十六进制哈希>/ 形式的中间目录
+*.[0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F]/
+
+# ---------- Visual Studio ----------
+.vs/
+*.VC.db
+*.VC.VC.opendb
+*.svclog
+*.psess
+*.vsp
+*.vspx
+*.sap
+ipch/
+
+# ---------- 编译产物 ----------
+*.obj
+*.o
+*.exe
+*.dll
+*.lib
+*.exp
+*.ilk
+*.pdb
+*.idb
+*.ipdb
+*.iobj
+*.tlog
+*.recipe
+*.log
+*.lastbuildstate
+*.res
+*.pch
+*.pgc
+*.pgd
+*.sbr
+*.bsc
+
+# ---------- 用户 / 本机设置 ----------
+# 保留 .vcxproj.user 中的调试配置可选；默认忽略，因其含本机绝对路径
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ---------- 其它 ----------
+*.tmp
+*.temp
+*~
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
