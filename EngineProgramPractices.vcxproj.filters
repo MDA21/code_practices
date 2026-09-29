@@ -24,6 +24,9 @@
     <ClInclude Include="include\RingQueue\RingQueue.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\SparseSet\SparseSet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\EntityHandlePool\EntityHandlePool.cpp">
@@ -36,6 +39,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="include\RingQueue\RingQueue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SparseSet\SparseSet.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

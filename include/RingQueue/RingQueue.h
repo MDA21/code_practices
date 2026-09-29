@@ -8,7 +8,7 @@
 template <typename T>
 class RingQueue {
 public:
-    explicit RingQueue(std::size_t capacity) : capacity_(capacity), head_(0), tail_(0), buffer_(capacity),occupied_(capacity,false) {
+    explicit RingQueue(std::size_t capacity) : capacity_(capacity), head_(0), tail_(0), buffer_(capacity) {
 
     }
 
@@ -18,7 +18,6 @@ public:
             return false;
 		}
         buffer_[tail_] = value;
-        occupied_[tail_] = true;
         tail_ = (tail_ + 1) % capacity_;
 		return true;
     }
@@ -29,7 +28,6 @@ public:
             return false;
         }
 		buffer_[tail_] = std::move(value);
-        occupied_[tail_] = true;
 		tail_ = (tail_ + 1) % capacity_;
         return true;
     }
@@ -42,7 +40,6 @@ public:
         }
         std::optional<T> value = std::move(buffer_[head_]);
         buffer_[head_] = std::nullopt;
-        occupied_[head_] = false;
         head_ = (head_ + 1) % capacity_;
 		return value;
     }
@@ -56,13 +53,13 @@ public:
     [[nodiscard]]
     bool empty() const noexcept {
 		if (capacity_ == 0) return true;
-		return head_ == tail_ && !occupied_[head_];
+		return head_ == tail_ && !buffer_[head_].has_value();
     }
 
     [[nodiscard]]
     bool full() const noexcept {
         if (capacity_ == 0) return true;
-        return head_ == tail_ && occupied_[head_];
+        return head_ == tail_ && buffer_[head_].has_value();
     }
 
     [[nodiscard]]
@@ -87,7 +84,6 @@ private:
     std::size_t head_;
     std::size_t tail_;
 	std::vector<std::optional<T>> buffer_;
-    std::vector<bool> occupied_;
 };
 
 void testRingQueue();
