@@ -64,7 +64,10 @@ Thumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 
-# 编辑器
+# 编辑器 / Agent
 .vscode/
 .idea/
+.cursor/
+.cursorignore
 *.swp
+*.code-workspace
