@@ -139,12 +139,16 @@
     <ClInclude Include="include\RingQueue\RingQueue.h" />
     <ClInclude Include="include\ScheduleTask\ScheduleTask.h" />
     <ClInclude Include="include\SparseSet\SparseSet.h" />
+    <ClInclude Include="include\VisibilityCull\VisibilityCull.h" />
+    <ClInclude Include="include\DeferredRemove\DeferredRemove.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\EntityHandlePool\EntityHandlePool.cpp" />
     <ClCompile Include="include\RingQueue\RingQueue.cpp" />
     <ClCompile Include="include\ScheduleTask\ScheduleTask.cpp" />
     <ClCompile Include="include\SparseSet\SparseSet.cpp" />
+    <ClCompile Include="include\VisibilityCull\VisibilityCull.cpp" />
+    <ClCompile Include="include\DeferredRemove\DeferredRemove.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
