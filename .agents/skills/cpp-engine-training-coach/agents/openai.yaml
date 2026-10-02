@@ -1,0 +1,4 @@
+interface:
+  display_name: "C++ 引擎练习教练"
+  short_description: "依据本地进度安排约三十分钟的 C++ 引擎与算法练习，并编译测试提交"
+  default_prompt: "使用 $cpp-engine-training-coach 读取本地训练进度，继续当前练习；没有进行中的题目时，安排一道约 30 分钟的新题。"

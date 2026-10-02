@@ -33,6 +33,12 @@
     <ClInclude Include="include\DeferredRemove\DeferredRemove.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\MatrixTraversal\MatrixTraversal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MatrixTranspose\MatrixTranspose.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\EntityHandlePool\EntityHandlePool.cpp">
@@ -54,6 +60,18 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="include\DeferredRemove\DeferredRemove.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="include\MatrixTraversal\MatrixTraversal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="include\MatrixTraversal\MatrixTraversalTests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="include\MatrixTranspose\MatrixTranspose.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="include\MatrixTranspose\MatrixTransposeTests.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

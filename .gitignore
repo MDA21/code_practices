@@ -15,6 +15,9 @@ x86/
 *.[0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F]/
 
 # ---------- Visual Studio ----------
+# Solution files are local to each device / Visual Studio version.
+*.sln
+*.slnx
 .vs/
 *.VC.db
 *.VC.VC.opendb
